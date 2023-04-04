@@ -108,6 +108,7 @@ img {
 body {
   font-family: renner;
   position: relative;
+  transition: var(--trans);
 }
 
 header {
@@ -137,10 +138,10 @@ header a {
 header a:hover {
   color: var(--orange);
 }
-header .active > a {
+header .active {
   color: var(--orange);
 }
-header .active > a::before {
+header .active::before {
   content: "";
   display: inline-block;
   width: 0.4rem;
@@ -156,12 +157,14 @@ header svg {
 }
 header .burger {
   display: none;
+  position: fixed;
 }
 @media screen and (max-width: 767px) {
   header li {
     display: none;
   }
   header .burger {
+    position: fixed;
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -201,6 +204,9 @@ header .burger {
     position: absolute;
     bottom: 20%;
     transition: var(--trans);
+  }
+  header .open .active {
+    color: var(--white);
   }
   header .open .burger {
     background-color: var(--white);
