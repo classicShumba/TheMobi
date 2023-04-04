@@ -1,0 +1,61 @@
+:root{
+    --orange: #ff7f00;
+    --white: #f2f2f2;
+    --black: #030303;
+    --wrapper-padding: 1rem 3rem;
+    --trans: all .3s ease-in-out;
+}
+
+// Configurations
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.padding-sides{
+    padding: var(--wrapper-padding);
+
+    @media screen and (max-width: 400px) {
+        --wrapper-padding: 1rem 1rem;
+        padding: var(--wrapper-padding);
+    }
+    
+    @media screen and (min-width: 768px) {
+        --wrapper-padding: 1rem 5rem;
+        padding: var(--wrapper-padding);
+    }
+    @media screen and (min-width: 992px) {
+        --wrapper-padding: 1rem 8rem;
+        padding: var(--wrapper-padding);
+    }
+}
+.orange{
+    color: var(--orange);
+}
+.dark{
+    color: var(--black);
+}
+.light{
+    color: var(--white);
+}
+.bg-dark{
+    background-color: var(--black);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
