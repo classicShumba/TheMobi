@@ -1,6 +1,10 @@
 @import "config";
 @import "font";
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: renner;
   position: relative;

@@ -105,6 +105,10 @@ img {
   src: url(../assets/fonts/Renner-Bold.ttf);
   font-weight: 700;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: renner;
   position: relative;
